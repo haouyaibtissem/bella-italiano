@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\styles\style.css">
+    <script src="../script/java.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lavishly+Yours&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Lavishly+Yours&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <table>
+                 <tr>
+                    <td rowspan="2">
+                        <div class="brand">
+                               <span class="logo">Bella</span>
+                               <span id="a1">ITALIANO</span>
+                               <div class="italy"></div>
+                        </div>
+                    </td>
+                    <td><a id="z1" href="#">HOME</a></td>
+                    <td><a class="e1" href="#OUR-MENU">MENU</a></td>
+                    <td><a class="e1" href="about.html">ABOUT</a></td>
+                    <td><a class="e1" href="#n6">RESERVATION</a></td>
+                    <td><a class="e1" href="#n7">DELIVERY</a></td>
+                    <td><a class="e1" href="contact.html">CONTACT</a></td>
+                    <td><button class="icon-btn cart-icon"  onclick="showCart()" >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                    </button></td>
+                    <td><button id="b1"> <a href="#OUR-MENU">ORDER NOW</a></button></td>
+                </tr>
+            </table>
+            <p>AUTHENTIC <br><span id="r1">ITALIAN</span> CUISINE</p> 
+            <img id="u1" src="../images/trait.jpg" alt=""> <br>
+            <span id="t1">Made with love, served with passion.</span> <br>
+            <span id="t1">Discover the rich flavor of Italy.</span> <br>  <br> <br><br>
+            <button id="y1"><a href="#OUR-MENU"> &#9776 VIEW MENU</a></button>
+            <button id="i1"><a href="#n6">&#x1F5D3 RESERVE A TABLE</a> </button>  
+        </nav>
+    </header>
+    <main>
+        <section class="categories">
+
+    <a href="#pizza" class="item active">
+        <i class="fa-solid fa-pizza-slice"></i>
+        <p>Pizza</p>
+    </a>
+
+    <a href="#pasta" class="item">
+        <i class="fa-solid fa-bowl-food"></i>
+        <p>Pasta</p>
+    </a>
+
+    <a href="#starters" class="item">
+        <i class="fa-solid fa-cheese"></i>
+        <p>Starters</p>
+    </a>
+
+    <a href="#salads" class="item">
+        <i class="fa-solid fa-leaf"></i>
+        <p>Salads</p>
+    </a>
+
+    <a href="#desserts" class="item">
+        <i class="fa-solid fa-ice-cream"></i>
+        <p>Desserts</p>
+    </a>
+
+    <a href="#drinks" class="item">
+        <i class="fa-solid fa-mug-hot"></i>
+        <p>Drinks</p>
+    </a>
+
+    <a href="#specials" class="item">
+        <i class="fa-solid fa-star"></i>
+        <p>Specials</p>
+    </a>
+
+</section>
+    <section class="title">
+    <div class="line"></div>
+    <h2> <span id="OUR-MENU">✧</span>OUR MENU <span>✧</span></h2>
+    <div class="line"></div>
+</section>
+<p class="subtitle">Fresh ingredients, authentic recipes.</p>
+<section class="menu" id="pizza">
+    <h2>PIZZA</h2> <br>
+<div class="cards">
+    <div class="n1">
+    <img class="x1" src="../images/margherita.jpg" alt="">
+    <div class="content">
+        <p>Margherita</p>
+        <span id="m1">Tomato sauce, Mozzarella, Fresh basil, Olive oil.</span> <br>
+        <span class="price">12.50$</span><br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('margherita', 12.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div> </div>
+    <div class="n1">
+    <img class="x1" src="../images/napolitano.jpg" alt="">
+    <div class="content">
+        <p>Napolitano</p>
+        <span id="m1">Tomato sauce, Mozzarella, Fresh basil, Olive oil.</span> <br>
+        <span class="price">15.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('napolitano', 15.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    <div class="n1">
+    <img class="x1" src="../images/pepperoni.jpg" alt="">
+    <div class="content">
+        <p>Pepperoni</p>
+        <span id="m1">Tomato sauce, Mozzarella, Pepperoni, Olive oil.</span> <br>
+        <span class="price">17.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('pepperoni', 17.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    <div class="n1">
+    <img class="x1" src="../images/funghi.jpg" alt="">
+    <div class="content">
+        <p>Funghi</p>
+        <span id="m1">Tomato sauce, Mozzarella, Mushroom.</span> <br>
+        <span class="price">16.55$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('funghi', 16.55)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+</div>
+    <br>
+    </section>
+    <section class="menu" id="pasta">
+    <h2>PASTA</h2> <br>
+    <div class="container">
+    <div class="n1">
+        <img class="x1" src="../images/lasagna.jpg" alt="">
+        <div class="content">
+        <p>Lasagna</p>
+        <span id="m1">Ground beef, Tomato sauce, Béchamel sauce, Mozzarella cheese, Parmesan cheese.</span> <br>
+        <span class="price">14.00$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('lasagna', 14.00)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+        <div class="n1">
+        <img class="x1" src="../images/spaghetti.jpg" alt="">
+        <div class="content">
+        <p>Spaghetti</p>
+        <span id="m1">Spaghetti pasta, Tomato sauce, Olive oil, Parmesan cheese, Fresh basil.</span> <br>
+        <span class="price">10.58$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('spaghetti', 10.58)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+        <div class="n1">
+        <img class="x1" src="../images/cannelloni.jpg" alt="">
+        <div class="content">
+        <p>Cannelloni</p>
+        <span id="m1">Cannelloni pasta, Tomato sauce, Olive oil, Parmesan cheese, Fresh basil.</span> <br>
+        <span class="price">14.80$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('cannelloni', 14.80)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/pasta.jpg" alt="">
+        <div class="content">
+        <p>Pasta</p>
+        <span id="m1">Pasta, Cream sauce, Grilled chicken, Mushrooms, Parmesan cheese, Parsley.</span> <br>
+        <span class="price">12.50$</span> <br>
+
+<button
+                        class="add-cart"
+                        onclick="addToCart('pasta', 12.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    </div>
+    <br>
+     </section>
+    <section class="menu" id="starters">
+    <h2>STARTERS</h2> <br>
+    <div class="container">
+    <div class="n1">
+    <img class="x1" src="../images/crevette.jpg" alt="">
+
+    <div class="content">
+        <p>Shrimp Crostini</p>
+        <span id="m1">shrimp, Avocado, toast; Parsley.</span> <br><br>
+        <span class="price">19.99$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('shrimp crostini', 19.99)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    <div class="n1">
+    <img class="x1" src="../images/cornetti.jpg" alt="">
+    <div class="content">
+        <p>Cornetti</p>
+        <span id="m1">Cream cheeze, Parsley</span> <br><br>
+        <span class="price">12.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('cornetti', 12.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    <div class="n1">
+    <img class="x1" src="../images/bruschetta.jpg" alt="">
+    <div class="content">
+        <p>Bruschetta</p>
+        <span id="m1">Toast, cherry tomatoes, parmesan cheeze, Parsley.</span> <br>
+        <span class="price">12.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('bruschetta', 12.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/ricotta.jpg" alt="">
+    <div class="content">
+        <p>Ricotta</p>
+        <span id="m1">Ricotta cheeze, olive, olive oil,Toast. </span> <br>
+        <span class="price">12.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('ricotta', 12.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    </div>
+    <br>
+    </section>
+    <section class="menu" id="salads">
+    <h2>SALADS</h2> <br>
+    <div class="container">
+    <div class="n1">
+        <img class="x1" src="../images/Insalata di Mare.jpg" alt="">
+        <div class="content">
+        <p>Insalata di Mare</p>
+        <span id="m1">Shrimp, Calamari, Mussels, Octopus, Cherry tomatoes, Mixed greens, Extra virgin olive oil, Fresh parsley.</span> <br>
+        <span class="price">16.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('insalata di mare', 16.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/pasta insalata.jpg" alt="">
+        <div class="content">
+        <p>Pasta Insalata</p>
+        <span id="m1">Pasta, Cherry tomatoes, Cucumber, Black olives, Mozzarella, Red onion, Fresh basil.</span> <br>
+        <span class="price">10.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('pasta insalata', 10.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/Panzanella.jpg" alt="">
+        <div class="content">
+        <p>Panzanella</p>
+        <span id="m1">Stale bread, Fresh tomatoes, Cucumber, Red onion, Fresh basil.</span> <br>
+        <span class="price">13.59$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('panzanella', 13.59)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+    </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/Caprese Salad.jpg" alt="">
+        <div class="content">
+        <p>Caprese salad</p>
+        <span id="m1">Fresh mozzarella, Ripe tomatoes, Fresh basil leaves, Extra virgin olive oil.</span> <br>
+        <span class="price">21.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('carpese salad', 21.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+</section>
+    <br>
+    </section>
+    <section class="menu" id="desserts">
+    <h2>DESSERTS</h2> <br>
+    <div class="container">
+    <div class="n1">
+        <img class="x1" src="../images/gelato.jpg" alt="">
+        <div class="content">
+        <p>Gelato</p>
+        <span id="m1"> Strawberry, blue berry, lemon, Mango.</span> <br><br>
+        <span class="price">7.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('gelato', 7.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+        <div class="n1">
+        <img class="x1" src="../images/Torta della Nonna.jpg" alt="">
+        <div class="content">
+        <p>Torta della Nonna</p>
+        <span id="m1">Shortcrust pastry, pastry cream, Pine nuts, Powdered sugar.</span> <br><br>
+        <span class="price">6.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('torta della nonna', 6.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+        <div class="n1">
+        <img class="x1" src="../images/panna cotta.jpg" alt="">
+        <div class="content">
+        <p>Panna Cotta</p>
+        <span id="m1">Heavy cream, Sugar, Gelatin, Vanilla, Fresh berries.</span> <br><br>
+        <span class="price">9.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('panna cotta', 9.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+        <div class="n1">
+        <img class="x1" src="../images/waffles.jpg" alt="">
+        <div class="content">
+        <p>Waffles</p>
+        <span id="m1">Chocolate sauce, Fresh fruits, Whipped cream, Powdered sugar, Ice cream.</span> <br>
+        <span class="price">6.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('waffles', 6.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+</section>
+    <br>
+    </section>
+    <section class="menu" id="drinks">
+    <h2>DRINKS</h2> <br>
+    <div class="container">
+    <div class="n1">
+        <img class="x1" src="../images/la dolce vita.jpg" alt="">
+        <div class="content">
+        <p>La Dolce Vita</p>
+        <span id="m1">Fresh orange juice, Lemon juice, Strawberry syrup, Sparkling water, Fresh mint leaves, Ice cubes.</span> <br>
+        <span class="price">4.50$</span> <br>
+
+     <button
+                        class="add-cart"
+                        onclick="addToCart('la dolce vita', 4.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>   </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/limonata.jpg" alt="">
+        <div class="content">
+        <p>Limonata</p>
+        <span id="m1">Lemon juice, Sparklin water, sugar, Ice cubes.</span> <br><br><br>
+        <span class="price">5.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('limonata', 5.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/pena colada.jpg" alt="">
+        <div class="content">
+        <p>Pena Colada</p>
+        <span id="m1">Pineapple juice, Coconut cream, coconut milk, Ice cubes, Fresh pineapple slice, Coconut flakes. </span> <br><br>
+        <span class="price">7.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('pena colada', 7.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/blue berry.jpg" alt="">
+        <div class="content">
+        <p>Blue Berry</p>
+        <span id="m1">Blue berry, Sparkling water, Ice cubes. </span> <br><br><br>
+        <span class="price">7.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('blue berry', 7.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+    <br>
+    </section>
+    <section class="menu" id="specials">
+    <h2>SPECIALS</h2> <br>
+    <div class="container">
+    <div class="n1">
+        <img class="x1" src="../images/espresso.jpg" alt="">
+        <div class="content">
+        <p>Espresso</p>
+        <span id="m1">Finely ground coffee beans, Hot water.</span> <br>
+        <span class="price">4.00$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('espresso', 4.00)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/capuccino.jpg" alt="">
+        <div class="content">
+        <p>Capuccino</p>
+        <span id="m1">Espresso, Steamed milk, Milk foam, Cocoa powder.</span> <br>
+        <span class="price">6.50$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('capuccino', 6.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/affogato bliss.jpg" alt="">
+        <div class="content">
+        <p>Affogato Bliss</p>
+        <span id="m1">Vanilla ice cream, Freshly brewed espresso, Chocolate shavings, Whipped cream, Caramel sauce.</span><br>
+        <span class="price">12.00$</span> <br>
+<button
+                        class="add-cart"
+                        onclick="addToCart('affogato bliss', 12.00)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/funghi zuppa.jpg" alt=""> 
+        <div class="content">
+        <p>Zuppa di Funghi</p>
+        <span id="m1">Fresh mushrooms, Onion, Chicken broth, Heavy cream, Fresh herbs.</span> <br>
+        <span class="price">8.99$</span> <br>
+  <button
+                        class="add-cart"
+                        onclick="addToCart('funghi', 8.99)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/zuppa.jpg" alt="">
+        <div class="content">
+        <p>Zuppa di Pomodoro </p>
+        <span id="m1">Fresh tomatoes, Tomato sauce, Onion, Vegetable broth, Fresh basil, Cream.</span> <br>
+        <span class="price">8.50$</span> <br>
+    <button
+                        class="add-cart"
+                        onclick="addToCart('zuppa', 8.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+    </div>
+    <div class="n1">
+        <img class="x1" src="../images/quatro fofrmaggi.jpg" alt="">
+        <div class="content">
+        <p>Quatro Formaggi</p>
+        <span id="m1">Tomato sauce, Mozzarella, Gorgonzola, Parmesan, Fontina. </span> <br>
+        <span class="price">10.50$</span> <br>
+        <button
+                        class="add-cart"
+                        onclick="addToCart('quatro Formaggi', 10.50)">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+        </div>
+        </div>
+    </div>
+    </section>
+    </section> 
+    <div class="cart-panel" id="cart-panel">
+        <div class="cart-header">
+            <h2>Your Basket</h2>
+
+            <button onclick="closeCart()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div id="cart-items">
+            <p class="empty-cart">Your basket is empty.</p>
+        </div>
+        <div class="cart-total">
+            <h3>
+                Total:
+                $<span id="total-price">0.00</span>
+            </h3>
+        </div>
+    </div>
+    <div class="forms-container">
+    <div id="n6">
+        <h2><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#EAC452"><path d="M198.83-142.77q-22.6 0-39.33-16.73-16.73-16.73-16.73-39.33v-576.95q0-22.6 16.73-39.33 16.73-16.73 39.42-16.73h75.39v-70.01h48.84v70.01h315.23v-70.01h47.7v70.01h75q22.69 0 39.42 16.73t16.73 39.33v576.95q0 22.6-16.73 39.33-16.73 16.73-39.33 16.73H198.83Zm574.55-56.15v-576.77q0-4.62-3.84-8.46-3.85-3.85-8.46-3.85H198.92q-4.61 0-8.46 3.85-3.84 3.84-3.84 8.46v576.77q0 4.61 3.84 8.46 3.85 3.84 8.46 3.84h562.16q4.61 0 8.46-3.84 3.84-3.85 3.84-8.46Zm-394.43-88.47h38.82v-160.43q25.81-5.4 43.1-24.13 17.28-18.73 17.28-44.63v-156.03h-33.84v149.46h-29.23v-149.46h-33.85v149.46H352v-149.46h-33.85v155.64q0 26.35 17.4 45.05 17.39 18.7 43.4 24.1v160.43Zm224.05 0h38.85v-384.84q-44.97 2.73-72.22 31.69-27.25 28.95-27.25 73.35v120.79H603v159.01Zm-416.38 88.47v12.3V-788-198.92Z"/></svg> 
+            <span id="h3">RESERVE A TABLE</span></h2>
+        <p id="b8">Book your table and enjoy a great experience.</p>
+        <label for="">Full Name</label>
+        <input type="text" placeholder="enter your full name"><br><br>
+        <label for="">Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number"><br><br>
+        <label for="">Date</label>
+        <input type="date"> <br><br>
+        <label for="">Time</label>
+        <input type="time"><br><br>
+        <label for="">Guests</label>
+        <input type="number" placeholder="number of person"> <br><br>
+        <button id="f5"> CONFIRM RESERVATION</button>
+    </div>
+    <div id="n7">
+        <h2><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#EAC452"><path d="M212.87-217.27q-30.12-32.53-27.15-77.88H91.49l10.36-47.89H202.5q12.59-22.43 35.49-36.01 22.91-13.58 50.82-13.58t50.75 13.58q22.84 13.58 36.09 36.01h189.23l88.89-384.33H206.03l1.7-8.01q3.52-17.56 17.04-28.72t31.77-11.16h457.33L678.55-624.2h105.08l110.8 147.56-35.94 181.49h-58.36q2.78 45.35-27.72 77.88-30.5 32.53-76.22 32.53-45.73 0-75.77-32.53-30.05-32.53-27.27-77.88H392.63q2.78 45.35-27.72 77.88-30.49 32.53-76.21 32.53-45.71 0-75.83-32.53ZM634.29-432.5H837l5.88-32.38-83.52-111.44h-92.21L634.29-432.5Zm9.78-254.35 9.7-40.52L565-343.04l9.3-40.11 32.37-140.56 37.4-163.14ZM49.76-440.78l11.88-47.89h193.53l-11.89 47.89H49.76Zm80.02-140.55 11.96-47.89h233.45l-11.96 47.89H129.78Zm158.86 348.7q23.78 0 39.94-16.45 16.16-16.45 16.16-39.56 0-23.78-16.18-39.94-16.19-16.16-39.57-16.16-23.37 0-39.87 16.18-16.49 16.19-16.49 39.57 0 23.37 16.45 39.87 16.45 16.49 39.56 16.49Zm407.5 0q23.78 0 39.94-16.45 16.16-16.45 16.16-39.56 0-23.78-16.18-39.94-16.19-16.16-39.57-16.16-23.37 0-39.87 16.18-16.49 16.19-16.49 39.57 0 23.37 16.45 39.87 16.45 16.49 39.56 16.49Z"/></svg> DELIVERY SERVICE</h2>
+        <p id="b8">We deliver your favorite meals to your doorstep.</p>
+        <label for="">Full Name</label>
+        <input type="text" placeholder="enter your full name"><br><br>
+        <label for="">Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number"><br><br>
+        <label for="">Address</label>
+        <input type="text" placeholder="Your delivery address" > <br><br>
+        <label for="">City/Area</label>
+        <input type="text" placeholder="City or Area"><br><br>
+        <label for="">Payement Method</label>
+        <select name="" id="" aria-placeholder="Select Payement Method">
+            <option value="">Card</option>
+            <option value="">Cash</option>
+            <option value="">Gift Card</option>
+        </select> <br> <br>
+        <button id="f5">PLACE ORDER</button> <br><br>
+    </div>
+    </div>
+<section class="services">
+    <div class="service-box">
+        <i class="fa-solid fa-seedling"></i>
+        <div>
+            <h3>FRESH INGREDIENTS</h3>
+            <p>We use the freshest ingredients.</p>
+        </div>
+    </div>
+    <div class="service-box">
+        <i class="fa-brands fa-pagelines"></i>
+        <div>
+            <h3>AUTHENTIC RECIPES</h3>
+            <p>Our recipes come straight from Italy.</p>
+        </div>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+            <h3>FAST DELIVERY</h3>
+            <p>Quick and reliable delivery to your door.</p>
+        </div>
+    </div>
+    <div class="service-box">
+        <i class="fa-solid fa-shield-heart"></i>
+        <div>
+            <h3>BEST QUALITY</h3>
+            <p>Premium quality in every dish we serve.</p>
+        </div>
+    </div>
+</section>
+<footer class="footer-section">
+<div class="footer">
+<div class="footer-box logo">
+<h1>Bella <span id="j5">Italiano</span></h1>
+<p>
+Experience the true taste of Italy.
+<br>
+Good food, good wine, good times.
+</p>
+<div class="social">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+<div class="footer-box">
+<h2>QUICK LINKS</h2>
+<a href="#">Home</a>
+<a href="#OUR-MENU">Menu</a>
+<a href="aboutme.html">About</a>
+<a href="#n6">Reservation</a>
+<a href="#n7">Delivery</a>
+<a href="#">Contact</a>
+</div>
+<div class="footer-box">
+<h2>OUR MENU</h2>
+<a href="#pizza">Pizza</a>
+<a href="#pasta">Pasta</a>
+<a href="#starters">Starters</a>
+<a href="#salads">Salads</a>
+<a href="#desserts">Desserts</a>
+<a href="#drinks">Drinks</a>
+<a href="#specials">Specials</a>
+</div>
+<div class="footer-box">
+<h2>CONTACT US</h2>
+<p><i class="fa-solid fa-location-dot"></i>123 Via Roma, Rome, Italy</p>
+<p><i class="fa-solid fa-phone"></i>+39 06 1234 5678</p>
+<p><i class="fa-solid fa-envelope"></i>info@bella-italiano.it</p>
+<p><i class="fa-regular fa-clock"></i>Mon-Sun : 11:00 AM - 11:00 PM</p>
+</div>
+<div class="footer-box">
+<h2>NEWSLETTER</h2>
+<p>Subscribe to get special offers and updates.</p>
+<input type="email" placeholder="Your email">
+<button>SUBSCRIBE</button>
+</div>
+</div>
+<div class="copyright">
+<p>© 2026 Bella Italiano. All rights reserved.</p>
+<div class="italy"></div>
+</div>
+</footer>   
+    </main>
+    
+</body>
+</html>

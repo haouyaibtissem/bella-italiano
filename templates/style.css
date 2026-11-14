@@ -1,0 +1,384 @@
+main{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height:300px;
+    background-image:url(../images/header\ reservation.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1{
+    align-items: center;
+    padding-left: 550px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#b1{
+
+    margin-left: 520px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 60px;          
+    padding: 60px;
+}
+
+.about-img img{
+    width: 450px;
+    border-radius: 20px;
+}
+
+.about-text{
+    width: 50%;
+    color: rgb(7, 7, 7);
+}
+.about-text h2{
+    margin-bottom: 7px;
+}
+.about-text h4{
+    margin-bottom: 7px;
+}
+.about-text p{
+    margin-bottom: 7px;
+}
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+.video-box{
+    position: relative;
+    margin-top: 60px;
+}
+
+.video-box video{
+    width:300px;
+    height:500px;
+    object-fit:cover;
+    border-radius:15px;
+    align-items: center;
+    margin-left: 490px;
+}
+
+.play{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:80px;
+    height:80px;
+    background:#d62828;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.play:hover{
+    transform:translate(-50%,-50%) scale(1.1);
+}
+/* =========================
+      SERVICES
+========================= */
+
+.services{
+    width:85%;
+    margin:80px auto;
+}
+
+.services h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.service{
+    background:#fafafa;
+    padding:40px 25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+}
+
+.service:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 25px rgba(0,0,0,.1);
+}
+
+.service i{
+    width:75px;
+    height:75px;
+    background:#d62828;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    margin:auto;
+}
+
+.service h3{
+    margin:20px 0;
+}
+
+.service p{
+    color:#777;
+}
+
+/* =========================
+         CHEFS
+========================= */
+
+.chef{
+    padding:80px 8%;
+    background:#fff7f6;
+}
+
+.chef h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.chef-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.chef-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.chef-card:hover{
+    transform:translateY(-10px);
+}
+
+.chef-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.chef-card h3{
+    text-align:center;
+    margin-top:18px;
+}
+
+.chef-card p{
+    color:#d62828;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    padding-bottom:20px;
+}
+
+.social i{
+    width:40px;
+    height:40px;
+    background:#d62828;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social i:hover{
+    background:#111;
+}
+
+/* =========================
+      NEWSLETTER
+========================= */
+
+.newsletter{
+    width:85%;
+    margin:90px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.news-image img{
+    width:320px;
+}
+
+.news-content{
+    flex:1;
+}
+
+.news-content h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.news-content p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.news-content form{
+    display:flex;
+}
+
+.news-content input{
+    flex:1;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px 0 0 8px;
+    outline:none;
+}
+
+.news-content button{
+    border:none;
+    background:#d62828;
+    color:white;
+    padding:15px 35px;
+    border-radius:0 8px 8px 0;
+    cursor:pointer;
+}
+
+.news-content button:hover{
+    background:#b51f1f;
+}
+
+/* =========================
+        FOOTER
+========================= */
+
+footer{
+    background:#111;
+    color:white;
+    padding:60px 8% 20px;
+}
+
+.footer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer h3{
+    margin-bottom:18px;
+}
+
+.footer p{
+    color:#ccc;
+    margin-bottom:10px;
+}
+
+footer hr{
+    margin:40px 0 20px;
+    border:none;
+    height:1px;
+    background:#444;
+}
+
+.copy{
+    text-align:center;
+    color:#999;
+}
+
+/* =========================
+      RESPONSIVE
+========================= */
+
+@media(max-width:991px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+.hero{
+    height:350px;
+}
+
+.overlay h1{
+    font-size:45px;
+}
+
+.newsletter{
+    flex-direction:column;
+    text-align:center;
+}
+
+.news-content form{
+    flex-direction:column;
+    gap:15px;
+}
+
+.news-content input,
+.news-content button{
+    width:100%;
+    border-radius:8px;
+}
+
+}
+
+@media(max-width:768px){
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.overlay h1{
+    font-size:38px;
+}
+
+.title h2,
+.services h2,
+.chef h2,
+.news-content h2{
+    font-size:32px;
+}
+
+.play{
+    width:65px;
+    height:65px;
+    font-size:22px;
+}
+
+}
